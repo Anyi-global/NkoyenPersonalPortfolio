@@ -906,6 +906,50 @@
         </div>
       </div>
 
+      <!-- PROJECT 5: Logistics Delivery Delay Prediction -->
+      <div class="project-row" style="display:block; padding:0;">
+        <div class="project-row-header" onclick="toggleProject('p1')" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
+          <div class="project-num">05</div>
+          <div class="project-info">
+            <div class="project-name">Logistics Delivery Delay — Predictive Model</div>
+            <div class="project-desc">Developed a predictive model that predicts factors causing logistics delivery delays
+              using Gradient Boosting Classifier.
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="project-tool">Python · Pandas · Scikit-learn</div>
+            <div class="project-tag">Logistics</div>
+            <a href="https://colab.research.google.com/drive/1vqP3_pzCvGF3piy68v2bEwfhhrZhsoW0?usp=sharing" target="_blank" class="view-project-btn" onclick="event.stopPropagation()">
+              View Notebook
+              <svg viewBox="0 0 12 12" fill="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1M11 1H4M11 1V8"/></svg>
+            </a>
+          </div>
+        </div>
+        <div id="p1" style="display:none; padding:0 2rem 2rem; border-top:0.5px solid rgba(245,241,232,0.08);">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1.5rem;">
+            <div>
+              <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;">Key Findings</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid var(--gold);">Model Accuracy: <strong style="color:var(--cream);">61%</strong></li>
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid var(--gold);">Multiclass classification: Early - 77.9% Accuracy, Late - 63.4% Accuracy, On-time - 7.6% Accuracy</li>
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid var(--gold);">Top contributing feature to delivery delay: <strong style="color:var(--cream);">Shipping mode standard class</strong></li>
+                <!-- <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid var(--gold);">October posted lowest monthly revenue — 47% below August peak</li>
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid var(--gold);">Gross margin ~69% but Ogun State carried a 53% cost ratio vs Osun's 21%</li> -->
+              </ul>
+            </div>
+            <div>
+              <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;">Recommendations Delivered</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid rgba(245,241,232,0.2);">Reassess the logistics partners and processes associated with Standard Class. Optimize routes, vendor timelines, and warehousing to reduce latency.</li>
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid rgba(245,241,232,0.2);">Reduce shipping duration estimates or improve fulfillment speed through warehouse automation or regional distribution centers.</li>
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid rgba(245,241,232,0.2);">Invest in improving real-time tracking and fulfillment speed across all modes. Promote reliable shipping modes with proven on-time records.</li>
+                <li style="font-size:0.82rem;color:rgba(245,241,232,0.65);padding-left:1rem;border-left:2px solid rgba(245,241,232,0.2);">Analyze geographic patterns of delays. Consider adding local fulfillment centers or partnering with local couriers in regions with frequent delays.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
