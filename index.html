@@ -278,6 +278,15 @@
     border-top: 0.5px solid rgba(245,241,232,0.08);
   }
   .project-row:hover { background: #231A08; }
+  .project-row-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
   .project-num {
     font-family: 'DM Mono', monospace; font-size: 0.8rem;
     color: var(--gold); min-width: 2.5rem;
@@ -499,13 +508,18 @@
     .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
     .process-steps::before { display: none; }
     footer { flex-direction: column; gap: 1rem; text-align: center; }
-    .project-row-header { grid-template-columns: 1fr; }
+    .project-row-header { display: block; }
+    .project-info { margin-top: 1rem; }
     .project-meta {
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0.75rem;
       margin-top: 1rem;
       width: 100%;
     }
+    .view-project-btn { align-self: flex-start; }
   }
 </style>
 </head>
@@ -735,7 +749,7 @@
 
       <!-- PROJECT 1: MANDY'S WINERY -->
       <div class="project-row" style="display:block; padding:0;">
-        <div class="project-row-header" onclick="toggleProject('p1')" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
+        <div class="project-row-header" onclick="toggleProject('p1')" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
           <div class="project-num">01</div>
           <div class="project-info">
             <div class="project-name">Mandy's Winery — Sales Performance Analysis</div>
@@ -778,7 +792,7 @@
 
       <!-- PROJECT 2: UNICORN COMPANIES -->
       <div class="project-row" style="display:block; padding:0;">
-        <div class="project-row-header" onclick="toggleProject('p2')" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
+        <div class="project-row-header" onclick="toggleProject('p2')" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
           <div class="project-num">02</div>
           <div class="project-info">
             <div class="project-name">Unicorn Companies — Global Startup Ecosystem Analysis</div>
@@ -820,7 +834,7 @@
 
       <!-- PROJECT 3: POWER BI SALES DASHBOARD -->
       <div class="project-row" style="display:block; padding:0;">
-        <div class="project-row-header" onclick="toggleProject('p3')" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
+        <div class="project-row-header" onclick="toggleProject('p3')" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
           <div class="project-num">03</div>
           <div class="project-info">
             <div class="project-name">Sales Performance & Customer Analytics — Power BI Dashboard</div>
@@ -868,7 +882,7 @@
 
       <!-- PROJECT 4: SQL LOAN ANALYSIS -->
       <div class="project-row" style="display:block; padding:0;">
-        <div class="project-row-header" onclick="toggleProject('p4')" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
+        <div class="project-row-header" onclick="toggleProject('p4')" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
           <div class="project-num">04</div>
           <div class="project-info">
             <div class="project-name">Loan Portfolio Analysis — SQL (T-SQL / CTE)</div>
@@ -913,7 +927,7 @@
 
       <!-- PROJECT 5: Logistics Delivery Delay Prediction -->
       <div class="project-row" style="display:block; padding:0;">
-        <div class="project-row-header" onclick="toggleProject('p1')" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
+        <div class="project-row-header" onclick="toggleProject('p1')" onmouseover="this.style.background='#231A08'" onmouseout="this.style.background='transparent'">
           <div class="project-num">05</div>
           <div class="project-info">
             <div class="project-name">Logistics Delivery Delay — Predictive Model</div>
